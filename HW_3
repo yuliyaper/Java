@@ -1,0 +1,86 @@
+package hw;
+
+public class HW3 {
+    public static void main(String[] args) {
+
+        String Line = "______________________________________________";
+
+        //Создать переменные a и b типа byte, присвоить им значения из допустимого диапазона.
+
+        byte a = 5;
+        byte b = 15;
+
+        System.out.println("Task 2");
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(Line);
+
+        // Создать переменные s и t типа short, присвоить им негативное и позитивное значения с разницей 60000.
+
+        short s = Short.MAX_VALUE;
+        short t = Short.MAX_VALUE - 60000;
+
+        System.out.println("Task 3");
+        System.out.println(s);
+        System.out.println(t);
+        System.out.println(Line);
+
+        // Создать переменную i типа int и присвоить ей минимально возможное значение этого типа.
+        // Затем присвоить максимально возможное значение этого типа.
+        // Распечатать оба значения в виде таблицы
+
+        int i = Integer.MIN_VALUE;
+
+        System.out.println("Task 4");
+        System.out.println(Line);
+        System.out.println("|\tint min\t" + "|\t" + i + "\t|");
+        System.out.println(Line);
+
+        i = Integer.MAX_VALUE;
+
+        System.out.println("|\tint max" + "|\t" + i + "\t|");
+        System.out.println(Line);
+
+        //Создать переменную phoneNumber и присвоить ей значение номера телефона с кодом страны и города
+        // (можно ненастоящий номер телефона, например, 18009998877)
+        
+        long phoneNumber = 83414196789L;
+
+        System.out.println("Task 5");
+        System.out.println(phoneNumber);
+        System.out.println(Line);
+
+        //Создать переменную f типа float и присвоить ей значение 100.101101.
+        // Создать переменную d типа double и присвоить ей значение 100.101101.
+
+        float f = 100.101101F;
+        double d = 100.101101;
+
+        System.out.println("Task 6");
+        System.out.println(Line);
+        System.out.println("|\tfloat f = 100.101101\t" + "|\t" + f + "\t|" );
+        System.out.println(Line);
+        System.out.println("|\tdouble d = 100.101101\t" + "|\t" + d + "\t|");
+        System.out.println(Line);
+
+        //Создать переменную типа Double с именем dd  и инициализировать её результатом суммы чисел 10.09999 и
+        // 20.099999.Создать переменную типа Float с именем ff  и инициализировать её результатом суммы чисел 10.09999
+        // и 20.099999.Распечатать результаты задания № 7, как продолжение таблицы из задания № 6.
+
+        Double dd = (10.09999 + 20.099999);
+        Float ff = (10.09999F + 20.099999F);
+
+        System.out.println("Task 7");
+        System.out.println(Line + "___________________");
+        System.out.println("|\tfloat f = 100.101101\t" + "\t\t\t|\t" + f + "\t\t\t|" );
+        System.out.println(Line + "___________________");
+        System.out.println("|\tdouble d = 100.101101" + "\t\t\t\t|\t" + d + "\t\t\t|");
+        System.out.println(Line + "___________________");
+        System.out.println("|\tDouble dd =(10.09999 + 20.099999)" + "\t|\t" + dd + "\t|" );
+        System.out.println(Line + "___________________");
+        System.out.println("|\tFloatff =(10.09999F + 20.099999F)" + "\t|\t" +ff + "\t\t\t|" );
+        System.out.println(Line + "___________________");
+
+
+    }
+}
