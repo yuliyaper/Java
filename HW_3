@@ -9,7 +9,7 @@ public class HW3 {
     public static int number = 1;
 
     public static void task() {
-        System. out. println("Task #" + number);
+        System. out. println("____Task #" + number + "____");
         number++;
     }
 
