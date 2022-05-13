@@ -1,29 +1,45 @@
 package hw;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
+import java.util.SortedMap;
+
 public class HW3 {
+
+    public static int number = 1;
+
+    public static void task() {
+        System. out. println("Task #" + number);
+        number++;
+    }
+
+    public static void line(){
+        System. out. println("______________________________________________");
+
+    }
+
     public static void main(String[] args) {
 
-        String Line = "______________________________________________";
 
         //Создать переменные a и b типа byte, присвоить им значения из допустимого диапазона.
 
         byte a = 5;
         byte b = 15;
 
-        System.out.println("Task 2");
+        task();
         System.out.println(a);
         System.out.println(b);
-        System.out.println(Line);
+        line();
 
         // Создать переменные s и t типа short, присвоить им негативное и позитивное значения с разницей 60000.
 
         short s = Short.MAX_VALUE;
         short t = Short.MAX_VALUE - 60000;
 
-        System.out.println("Task 3");
+        task();
         System.out.println(s);
         System.out.println(t);
-        System.out.println(Line);
+        line();
 
         // Создать переменную i типа int и присвоить ей минимально возможное значение этого типа.
         // Затем присвоить максимально возможное значение этого типа.
@@ -31,24 +47,24 @@ public class HW3 {
 
         int i = Integer.MIN_VALUE;
 
-        System.out.println("Task 4");
-        System.out.println(Line);
+        task();
+        line();
         System.out.println("|\tint min\t" + "|\t" + i + "\t|");
-        System.out.println(Line);
+        line();
 
         i = Integer.MAX_VALUE;
 
         System.out.println("|\tint max" + "|\t" + i + "\t|");
-        System.out.println(Line);
+        line();
 
         //Создать переменную phoneNumber и присвоить ей значение номера телефона с кодом страны и города
         // (можно ненастоящий номер телефона, например, 18009998877)
-        
+
         long phoneNumber = 83414196789L;
 
-        System.out.println("Task 5");
+        task();
         System.out.println(phoneNumber);
-        System.out.println(Line);
+        line();
 
         //Создать переменную f типа float и присвоить ей значение 100.101101.
         // Создать переменную d типа double и присвоить ей значение 100.101101.
@@ -56,21 +72,23 @@ public class HW3 {
         float f = 100.101101F;
         double d = 100.101101;
 
-        System.out.println("Task 6");
-        System.out.println(Line);
+        task();
+        line();
         System.out.println("|\tfloat f = 100.101101\t" + "|\t" + f + "\t|" );
-        System.out.println(Line);
+        line();
         System.out.println("|\tdouble d = 100.101101\t" + "|\t" + d + "\t|");
-        System.out.println(Line);
+        line();
 
         //Создать переменную типа Double с именем dd  и инициализировать её результатом суммы чисел 10.09999 и
         // 20.099999.Создать переменную типа Float с именем ff  и инициализировать её результатом суммы чисел 10.09999
         // и 20.099999.Распечатать результаты задания № 7, как продолжение таблицы из задания № 6.
 
+
+        String Line = "______________________________________________";
         Double dd = (10.09999 + 20.099999);
         Float ff = (10.09999F + 20.099999F);
 
-        System.out.println("Task 7");
+        task();
         System.out.println(Line + "___________________");
         System.out.println("|\tfloat f = 100.101101\t" + "\t\t\t|\t" + f + "\t\t\t|" );
         System.out.println(Line + "___________________");
