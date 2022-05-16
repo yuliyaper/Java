@@ -1,8 +1,6 @@
 package hw;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.util.SortedMap;
+import static utils.Utils.line;
 
 public class HW3 {
 
@@ -11,11 +9,6 @@ public class HW3 {
     public static void task() {
         System. out. println("____Task #" + number + "____");
         number++;
-    }
-
-    public static void line(){
-        System. out. println("______________________________________________");
-
     }
 
     public static void main(String[] args) {
